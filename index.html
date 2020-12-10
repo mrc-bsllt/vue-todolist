@@ -32,8 +32,8 @@
         <ul id="todo_list">
           <li v-for="(todo, index) in toDoList">
             <span :class="index == toDoListIndex ? 'delete' : ''">{{todo}}</span>
-            <div class="icon_container">
-              <i class="fas fa-trash-alt" @click="deleteToDo(index)"></i>
+            <div class="icon_container" @click="deleteToDo(index)">
+              <i class="fas fa-trash-alt"></i>
             </div>
           </li>
         </ul>
