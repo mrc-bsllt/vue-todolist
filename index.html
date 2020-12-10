@@ -14,7 +14,28 @@
     <title>Vue To Do List</title>
   </head>
   <body>
-    
+
+    <div id="todo_section">
+
+      <h1>To Do List con VueJS</h1>
+
+      <div class="form">
+        <input type="text" name="" value="" placeholder="Inserisci il tuo promemoria">
+        <button type="button" name="button">INSERISCI!</button>
+      </div>
+
+      <div class="todo_list_section">
+        <ul id="todo_list">
+          <template v-if="visible">
+            <li v-for="todo in toDoList">
+              <span>{{todo}}</span>
+              <i class="fas fa-trash-alt" @click="deleteToDo()"></i>
+          </template>
+          </li>
+        </ul>
+      </div>
+
+    </div>
 
 
     <script src="js/script.js" charset="utf-8"></script>

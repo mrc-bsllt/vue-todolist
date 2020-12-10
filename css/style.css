@@ -4,3 +4,23 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+#todo_section {
+  padding: 20px;
+}
+
+/* todo list section */
+#todo_list {
+  list-style: none;
+}
+#todo_list > li {
+  margin: 10px 0;
+}
+#todo_list > li > span {
+  display: inline-block;
+  width: 350px;
+}
+#todo_list > li > i {
+  cursor: pointer;
+}
+/* /todo list section */
