@@ -1,0 +1,5 @@
+const app = New Vue (
+  {
+    
+  }
+);
