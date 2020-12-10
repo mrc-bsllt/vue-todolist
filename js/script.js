@@ -10,7 +10,6 @@ const app = new Vue (
         this.toDoList.splice(index, 1);
       },
       addToDo: function() {
-        this.visible = true;
         this.toDoList.push(this.inputText);
         this.inputText = "";
       },
