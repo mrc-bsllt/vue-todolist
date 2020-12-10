@@ -3,8 +3,8 @@ const app = new Vue (
     el: "#todo_section",
     data: {
       toDoList: ["Fare la spesa", "Pagare le bollette", "Completare l'esercizio Boolean", "Cucinare il pranzo", "Pulire la casa"],
-      inputText: "",
-      toDoListIndex: -1
+      toDoListIndex: -1,
+      inputText: ""
     },
     methods: {
       deleteToDo: function(index) {

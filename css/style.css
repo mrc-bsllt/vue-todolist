@@ -5,10 +5,50 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* utiities */
+.btn {
+  padding: 5px 10px;
+  border: 2px solid #1e2fff;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 700;
+}
+/* /utiities */
+
+/* header */
+header {
+  height: 100px;
+  line-height: 98px;
+  border-bottom: 2px solid #0712a4;
+  text-align: center;
+  background-color: #000000;
+}
+h1 {
+  font-family: 'Nerko One', cursive;
+  color: #ffffff;
+}
+/* /header */
+
 #todo_section {
   padding: 20px;
 }
-
+.form {
+  text-align: center;
+}
+.form > input {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: width 0.6s linear;
+}
+.form > input:focus {
+  width: 350px;
+  outline: none;
+  border: 3px solid #1e2fff;
+}
 /* todo list section */
 #todo_list {
   list-style: none;
