@@ -11,6 +11,7 @@ const app = new Vue (
       },
       addToDo: function() {
         this.toDoList.push(this.inputText);
+        this.inputText = "";
       }
     }
   }
