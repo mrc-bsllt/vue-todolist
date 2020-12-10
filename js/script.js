@@ -4,10 +4,16 @@ const app = new Vue (
     data: {
       toDoList: ["Fare la spesa", "Pagare le bollette", "Completare l'esercizio Boolean", "Cucinare il pranzo", "Pulire la casa"],
       inputText: "",
+      toDoListIndex: -1
     },
     methods: {
       deleteToDo: function(index) {
-        this.toDoList.splice(index, 1);
+        this.toDoListIndex = index;
+        setTimeout(
+          () => {
+            this.toDoList.splice(index, 1);
+            this.toDoListIndex = -1;
+          }, 500);
       },
       addToDo: function() {
         this.toDoList.push(this.inputText);

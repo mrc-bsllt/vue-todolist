@@ -28,7 +28,7 @@
       <div class="todo_list_section">
         <ul id="todo_list">
           <li v-for="(todo, index) in toDoList">
-            <span>{{todo}}</span>
+            <span :class="index == toDoListIndex ? 'delete' : ''">{{todo}}</span>
             <i class="fas fa-trash-alt" @click="deleteToDo(index)"></i>
           </li>
         </ul>

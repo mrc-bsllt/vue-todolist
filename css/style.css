@@ -20,6 +20,9 @@
   display: inline-block;
   width: 350px;
 }
+#todo_list > li > span.delete {
+  text-decoration: line-through;
+}
 #todo_list > li > i {
   cursor: pointer;
 }
