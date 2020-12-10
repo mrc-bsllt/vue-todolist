@@ -4,7 +4,7 @@ const app = new Vue (
     data: {
       toDoList: ["Fare la spesa", "Pagare le bollette", "Completare l'esercizio Boolean", "Cucinare il pranzo", "Pulire la casa"],
       toDoListIndex: -1,
-      inputText: ""
+      inputText: "",
     },
     methods: {
       deleteToDo: function(index) {

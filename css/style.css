@@ -51,10 +51,13 @@ h1 {
 }
 /* todo list section */
 #todo_list {
+  width: max-content;
   list-style: none;
 }
 #todo_list > li {
   margin: 10px 0;
+  padding: 10px;
+  border-bottom: 2px solid #1e2fff;
 }
 #todo_list > li > span {
   display: inline-block;
@@ -63,7 +66,17 @@ h1 {
 #todo_list > li > span.delete {
   text-decoration: line-through;
 }
-#todo_list > li > i {
+.icon_container {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ef0f0f;
+  border-radius: 50%;
   cursor: pointer;
+}
+#todo_list > li i {
+  color: #bdb9b2;
 }
 /* /todo list section */
