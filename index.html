@@ -26,11 +26,9 @@
 
       <div class="todo_list_section">
         <ul id="todo_list">
-          <template v-if="visible">
-            <li v-for="todo in toDoList">
-              <span>{{todo}}</span>
-              <i class="fas fa-trash-alt" @click="deleteToDo()"></i>
-          </template>
+          <li v-for="(todo, index) in toDoList">
+            <span>{{todo}}</span>
+            <i class="fas fa-trash-alt" @click="deleteToDo(index)"></i>
           </li>
         </ul>
       </div>
