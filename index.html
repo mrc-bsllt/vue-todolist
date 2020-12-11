@@ -29,7 +29,7 @@
       </div>
 
       <div class="todo_list_section">
-        <ul id="todo_list">
+        <ul id="todo_list" v-if="toDoList.length > 0">
           <li v-for="(todo, index) in toDoList">
             <span :class="index == toDoListIndex ? 'delete' : ''">{{todo}}</span>
             <div class="icon_container" @click="deleteToDo(index)">
@@ -37,6 +37,7 @@
             </div>
           </li>
         </ul>
+        <h2 v-else>Non ci sono cose da fare!</h2>
       </div>
 
     </div>
